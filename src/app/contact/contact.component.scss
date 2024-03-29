@@ -1,6 +1,6 @@
-body {
+#body {
     margin: 0;
-    background-image: url("materials/wallpaper.png");
+    background-image: url("../../assets/wallpaper.png");
     background-size:  100% auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -132,7 +132,7 @@ a.nav-link:hover{
 
 button.btn.btn-warning{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 5px 50px;
     width: 100%;
 }
