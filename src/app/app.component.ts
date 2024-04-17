@@ -18,7 +18,7 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.modal = new bootstrap.Modal(this.helloEl?.nativeElement, {});
   }
- 
+
   trigger() {
     this.modal?.toggle();
   }

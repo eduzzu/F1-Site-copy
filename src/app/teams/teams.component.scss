@@ -1,0 +1,52 @@
+#body{
+    height: 100vh;
+    overflow: auto;
+}
+.card {
+    display: grid;
+    top: 100px;
+    border-left: none;
+    border-bottom: none;
+    border-right: 2px solid rgb(221, 217, 217);
+    border-top: 2px solid rgb(221, 217, 217);
+    border-radius: 20px;
+    height: 300px;
+    width: 40rem;
+    cursor: pointer;
+    place-items: center;
+    
+
+}
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2em;
+    column-gap: 3em;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+  }
+
+  .card:hover{
+    border-color: red;
+    transition: 1s;
+  }
+
+.spacer {
+    height: 170px;
+  }
+
+img.card-img-top{
+  width: 90%;
+}
+
+.card-text{
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style:italic;
+  font-weight:800;
+  font-size: larger;
+  color: gray;
+}

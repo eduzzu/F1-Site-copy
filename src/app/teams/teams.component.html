@@ -1,0 +1,13 @@
+<div id="body">
+    <div class="cards">
+        <div *ngFor="let team of dataSource;" class="card">
+            <img [src]="team.imgsrc" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{team.name}}</h5>
+                <p class="card-text">{{team.driver1}}<br>{{team.driver2}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+</div>
+

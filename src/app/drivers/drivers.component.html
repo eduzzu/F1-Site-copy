@@ -1,0 +1,12 @@
+<div id="body">
+    <div class="cards">
+        <div *ngFor="let driver of dataSource; let i = index" class="card" style="width: 18rem;">
+            <img [src]="driver.imgsrc" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">{{driver.name}} <span>{{driver.number}}</span></h5>
+                <p class="card-text">{{driver.team}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="spacer"></div>
+</div>
