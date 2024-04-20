@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { DriversComponent } from './drivers/drivers.component';
 import { TeamsComponent } from './teams/teams.component';
+import { DriverInfoComponent } from './driver-info/driver-info.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,9 @@ const routes: Routes = [
   },
   {
     path: 'teams', component: TeamsComponent
+  },
+  {
+    path: 'drivers/:id', component: DriverInfoComponent
   }
 ];
 

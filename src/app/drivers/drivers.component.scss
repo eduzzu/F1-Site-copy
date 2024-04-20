@@ -6,11 +6,11 @@
     display: grid;
     top: 100px;
     border-left: none;
-    border-bottom: none;
-    border-right: 2px solid rgb(221, 217, 217);
-    border-top: 2px solid rgb(221, 217, 217);
+    border-bottom: 4px solid rgb(221, 217, 217);
+    border-right: 4px solid rgb(221, 217, 217);
+    border-top: 4px solid rgb(221, 217, 217);
     border-radius: 20px;
-    height: 360px;
+    height: 350px;
     cursor: pointer;
 
 }
@@ -33,13 +33,31 @@
 .spacer {
     height: 170px;
   }
-  h5 span{
-    color: gold;
-  }
-  .card-text{
+  .card-title{
     font-family: "Red Hat Display", sans-serif;
     font-optical-sizing: auto;
-    font-style:italic;
+    font-weight:500;
+  }
+
+  .card-body{
+    font-family: "Red Hat Display", sans-serif;
+    font-optical-sizing: auto;
     font-weight:800;
-    color: gray;
+  }
+
+  img{
+    margin-top: 35px;
+    width: 220px;
+    height: 200px;
+  }
+
+ #driverLastName{
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  margin-right: 7px;
+  }
+
+  #driverNumber{
+    font-weight: bold;
   }

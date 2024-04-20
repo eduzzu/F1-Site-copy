@@ -1,11 +1,13 @@
 <div id="body">
     <div class="cards">
         <div *ngFor="let driver of dataSource; let i = index" class="card" style="width: 18rem;">
-            <img [src]="driver.imgsrc" class="card-img-top">
-            <div class="card-body">
-                <h5 class="card-title">{{driver.name}} <span>{{driver.number}}</span></h5>
-                <p class="card-text">{{driver.team}}</p>
-            </div>
+            <a>
+                <img [src]="driver.imgsrc" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{driver.firstName}} <span id="driverLastName">{{driver.lastName}}</span><span id="driverNumber" [style.color]="getColorByNumber(driver.number)">{{driver.number}}</span></h5>
+                    <p [style.color] = "getColorByTeam(driver.team)" class="card-text">{{driver.team}}</p>
+                </div>
+            </a>
         </div>
     </div>
     <div class="spacer"></div>
