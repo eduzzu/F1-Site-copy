@@ -1,7 +1,7 @@
 <div id="body">
     <div class="cards">
         <div *ngFor="let driver of dataSource; let i = index" class="card" style="width: 18rem;">
-            <a>
+            <a (click)="goToDriver(driver.id)">
                 <img [src]="driver.imgsrc" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">{{driver.firstName}} <span id="driverLastName">{{driver.lastName}}</span><span id="driverNumber" [style.color]="getColorByNumber(driver.number)">{{driver.number}}</span></h5>

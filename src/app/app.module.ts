@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { DriversComponent } from './drivers/drivers.component';
 import { TeamsComponent } from './teams/teams.component';
 import { DriverInfoComponent } from './driver-info/driver-info.component';
+import { TeamInfoComponent } from './team-info/team-info.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { DriverInfoComponent } from './driver-info/driver-info.component';
     HeaderComponent,
     DriversComponent,
     TeamsComponent,
-    DriverInfoComponent
+    DriverInfoComponent,
+    TeamInfoComponent
   ],
   imports: [
     BrowserModule,

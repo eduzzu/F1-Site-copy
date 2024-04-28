@@ -20,7 +20,7 @@ const routes: Routes = [
     path: 'teams', component: TeamsComponent
   },
   {
-    path: 'drivers/:id', component: DriverInfoComponent
+    path: 'driver/:id', component: DriverInfoComponent
   }
 ];
 

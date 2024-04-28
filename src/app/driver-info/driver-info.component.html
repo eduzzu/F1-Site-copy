@@ -1,0 +1,76 @@
+<div id="body">
+    <div id="driver" *ngIf="driver">
+        <img [src]="driver.imgsrc" alt="Driver Image">
+        <div class="driverDetails">
+            <h1 class="driverNumber">{{driver.number}}</h1>
+            <img [src]="driver.nationality" alt="">
+        </div>
+        <h1 class="driverName">{{driver.name}}</h1>
+    </div>
+    <div class="driverStats">
+        <table class="stat-list">
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Team</span>
+                </th>
+                <td class="stat-value">{{driver.team}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Country</span>
+                </th>
+                <td class="stat-value">{{driver.country}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Podiums</span>
+                </th>
+                <td class="stat-value">{{driver.podiums}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Points</span>
+                </th>
+                <td class="stat-value">{{driver.points}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Grand Prix entered</span>
+                </th>
+                <td class="stat-value">{{driver.gpEntries}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">World Championships</span>
+                </th>
+                <td class="stat-value">{{driver.worldChampionships}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Highest race finish</span>
+                </th>
+                <td class="stat-value">{{driver.highestRaceFinish}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Highest grid position</span>
+                </th>
+                <td class="stat-value">{{driver.highestGridPosition}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Date of birth</span>
+                </th>
+                <td class="stat-value">{{driver.dateOfBirth}}</td>
+            </tr>
+            <tr>
+                <th scope="row" class="stat-key">
+                    <span class="text">Place of birth</span>
+                </th>
+                <td class="stat-value">{{driver.placeOfBirth}}</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="spacer"></div>
+</div>
