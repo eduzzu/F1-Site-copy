@@ -5,23 +5,40 @@ import { ContactComponent } from './contact/contact.component';
 import { DriversComponent } from './drivers/drivers.component';
 import { TeamsComponent } from './teams/teams.component';
 import { DriverInfoComponent } from './driver-info/driver-info.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
+ 
   {
-    path: '', component: HomeComponent
+    path: 'login', 
+    component: LoginComponent
   },
   {
-    path:'contact', component:ContactComponent
+    path: 'home',
+    component: HomeComponent
   },
   {
-    path: 'drivers', component: DriversComponent
+    path:'contact', 
+    component:ContactComponent
   },
   {
-    path: 'teams', component: TeamsComponent
+    path: 'drivers', 
+    component: DriversComponent
   },
   {
-    path: 'driver/:id', component: DriverInfoComponent
-  }
+    path: 'teams', 
+    component: TeamsComponent
+  },
+  {
+    path: 'driver/:id', 
+    component: DriverInfoComponent
+  },
+   {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  
 ];
 
 @NgModule({

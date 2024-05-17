@@ -1,5 +1,5 @@
 #navbar{
-    background-color: red;
+    background-color: #c50102;
     width: 100%;
     height: 60px;
     position: fixed;
@@ -8,7 +8,7 @@
 
 ul.nav.nav-pills{
     color: white;
-    background-color: red;
+    background-color: #c50102;
     text-align: center;
     justify-content: center;
     margin-top: -102px;
@@ -18,7 +18,7 @@ ul.nav.nav-pills{
 
 
 ul.dropdown-menu.show{
-    background-color: red;
+    background-color: #c50102;
 }
 
 li.nav-item.dropdown{
@@ -78,6 +78,7 @@ a.dropdown-item:active{
     margin-top: -62px;
 
 }
+
 
 #login:hover{
     color: black;
