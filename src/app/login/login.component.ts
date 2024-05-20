@@ -51,8 +51,6 @@ onLogin() {
     }
   }
 }
-
-
 }
 
 export class RegisterModel  {

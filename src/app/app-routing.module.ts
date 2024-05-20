@@ -6,6 +6,7 @@ import { DriversComponent } from './drivers/drivers.component';
 import { TeamsComponent } from './teams/teams.component';
 import { DriverInfoComponent } from './driver-info/driver-info.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
  
@@ -15,23 +16,28 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate: [AuthGuard]
   },
   {
     path:'contact', 
-    component:ContactComponent
+    component:ContactComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'drivers', 
-    component: DriversComponent
+    component: DriversComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'teams', 
-    component: TeamsComponent
+    component: TeamsComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'driver/:id', 
-    component: DriverInfoComponent
+    component: DriverInfoComponent,
+    canActivate: [AuthGuard]
   },
    {
     path: '',

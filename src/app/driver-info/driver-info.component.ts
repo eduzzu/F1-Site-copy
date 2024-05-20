@@ -90,7 +90,7 @@ const drivers: DRIVER[] = [
   points: 691,
   gpEntries: 109 ,
   worldChampionships: 0,
-  highestRaceFinish:"2 (x8)",
+  highestRaceFinish:"1 (x1)",
   highestGridPosition: 1 ,
   dateOfBirth: "13/11/1999" ,
   placeOfBirth: "Bristol, England" 
